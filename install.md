@@ -56,12 +56,6 @@ This guide will help you install Quantum Espresso on your local machine. The gui
    ```
    This process might take some time depending on your system.
 
-3. **Verify the Build**:
-   After compilation, verify the installation by running:
-   ```bash
-   make check
-   ```
-
 ---
 
 ### Step 4: **Set Up Environment Variables**
@@ -82,14 +76,46 @@ To use Quantum ESPRESSO executables conveniently, add them to your PATH.
 ---
 
 ### Step 5: **Test the Installation**
-1. Navigate to the `examples` directory:
+1. Create a new directory for testing:
    ```bash
-   cd /path/to/qe-X.Y.Z/PP/examples
+   mkdir test_qe
+   cd test_qe
    ```
-2. Run a sample test:
+2. ceate a simple input file `input/test.in`: 
    ```bash
-   ./run_example
+   &CONTROL
+   calculation = 'scf',
+   pseudo_dir = './pseudo',
+   outdir = './out',
+   /
+   &SYSTEM
+      ibrav = 2, celldm(1) = 10.2, nat = 2, ntyp = 1,
+      ecutwfc = 30.0,
+   /
+   &ELECTRONS
+   /
+   ATOMIC_SPECIES
+      Si 28.086 Si.pz-vbc.UPF
+   ATOMIC_POSITIONS crystal
+      Si 0.0 0.0 0.0
+      Si 0.25 0.25 0.25
+   K_POINTS automatic
+      4 4 4 0 0 0
    ```
+   - This input file performs a simple SCF calculation for Silicon.
+   - pseudo/Si.pz-vbc.UPF is the pseudopotential file for Silicon.
+   - out/ is the directory for output files.
+   - `Si.pz-vbc.UPF` can be downloaded from the Quantum ESPRESSO website.
+   
+3. Run the `pw.x` executable:
+   ```bash
+   pw.x < ./input/test.in > ./output/test.out
+   ```
+4. Check the output file:
+   ```bash
+   cat test.out
+   ```
+   If the calculation completes without errors, the installation was successful.
 
 ---
 

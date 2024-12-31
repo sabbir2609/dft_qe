@@ -1,0 +1,36 @@
+&CONTROL
+    calculation = 'scf',              ! SCF calculation
+    prefix = 'graphene',              ! Prefix for output files
+    outdir = './output/graphene/',    ! Temporary directory for calculations
+    pseudo_dir = './pseudo/',         ! Pseudopotential directory
+    tstress = .true.,                 ! Calculate stress tensor
+    tprnfor = .true.,                 ! Calculate forces
+/
+
+&SYSTEM
+    ibrav = 4,                        ! Graphene's hexagonal unit cell
+    celldm(1) = 2.46,                 ! Lattice constant for graphene in Å
+    celldm(3) = 90.0,                 ! Angle between lattice vectors (90° for graphene)
+    nat = 2,                          ! Number of atoms (C atoms in graphene)
+    ntyp = 1,                         ! Number of atom types (carbon)
+    ecutwfc = 40,                     ! Wavefunction cutoff (eV)
+    ecutrho = 400,                    ! Charge density cutoff (eV)
+    occupations = 'smearing',         ! Smearing method
+    smearing = 'gaussian',            ! Gaussian smearing
+    degauss = 0.01,                   ! Smearing width
+/
+
+&ELECTRONS
+    conv_thr = 1.0d-8,                ! Convergence threshold for SCF
+    mixing_beta = 0.7,                ! Mixing factor for self-consistency
+/
+
+ATOMIC_SPECIES
+  C  12.011  C.pz-rrkjus.UPF        ! Carbon pseudopotential (adjust path to the correct one)
+
+ATOMIC_POSITIONS (angstrom)
+  C  0.000000  0.000000  0.000000
+  C  1.230000  0.000000  0.000000
+
+K_POINTS automatic
+  6 6 1 0 0 0                         ! k-point grid for graphene (Monkhorst-Pack)
