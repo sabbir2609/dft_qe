@@ -1,7 +1,7 @@
 &CONTROL
   calculation = 'bands',
   prefix      = 'graphene',
-  outdir      = '/output/graphene/',
+  outdir      = './temp/',
   pseudo_dir  = './pseudos/',
 /
 

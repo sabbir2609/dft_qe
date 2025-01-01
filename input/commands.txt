@@ -1,6 +1,0 @@
-pw.x -i <./input/graphene.in > ./output/graphene/graphene.out
-
-
-Bandstructure calculation
-
-pw -i ./input/graphene_bands.in > ./output/graphene/graphene_bands.out
