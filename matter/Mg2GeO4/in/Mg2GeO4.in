@@ -1,0 +1,54 @@
+CIF2CELL 2.1.0
+2025-09-08 2:26
+Output for Mg2GeO4
+
+ BIBLIOGRAPHIC INFORMATION
+Failed to get author information, No journal information 
+ INPUT CELL INFORMATION
+Symmetry information:
+Cubic crystal system.
+Space group number     : 227
+Hall symbol            : F 4d 2 3 -1d
+Hermann-Mauguin symbol : Fd-3m
+
+Lattice parameters:
+          a           b           c 
+  8.2498990   8.2498990   8.2498990 
+      alpha        beta       gamma 
+ 90.0000000  90.0000000  90.0000000 
+Representative sites :
+Atom           a1          a2          a3 
+Mg      0.1250000   0.1250000   0.6250000
+Ge      0.0000000   0.0000000   0.0000000
+O       0.1249371   0.1249371   0.8750629
+
+ OUTPUT CELL INFORMATION
+Symmetry information:
+Cubic crystal system.
+Space group number     : 227
+Hall symbol            : F 4d 2 3 -1d
+Hermann-Mauguin symbol : Fd-3m
+
+Bravais lattice vectors :
+  0.5000000   0.5000000   0.0000000 
+  0.5000000   0.0000000   0.5000000 
+  0.0000000   0.5000000   0.5000000 
+All sites, (lattice coordinates):
+Atom           a1          a2          a3 
+Mg      0.6250000   0.6250000   0.6250000
+Mg      0.6250000   0.1250000   0.6250000
+Mg      0.1250000   0.6250000   0.6250000
+Mg      0.6250000   0.6250000   0.1250000
+Ge      0.0000000   0.0000000   0.0000000
+Ge      0.2500000   0.2500000   0.2500000
+O       0.3748112   0.8750629   0.8750629
+O       0.8750629   0.8750629   0.8750629
+O       0.8750629   0.3748112   0.8750629
+O       0.8751888   0.3749371   0.3749371
+O       0.3749371   0.8751888   0.3749371
+O       0.8750629   0.8750629   0.3748112
+O       0.3749371   0.3749371   0.8751888
+O       0.3749371   0.3749371   0.3749371
+
+Unit cell volume  : 140.3737490 A^3
+Unit cell density :   2.6391829 u/A^3 =  29.5743433 g/cm^3

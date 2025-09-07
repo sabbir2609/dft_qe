@@ -1,0 +1,50 @@
+&CONTROL
+  calculation = 'scf',
+  prefix      = 'Mg2GeO4',
+  outdir      = './out',
+  pseudo_dir  = './pseudo',
+  verbosity   = 'high'
+/
+
+&SYSTEM
+  ibrav      = 0,
+  nat        = 14,
+  ntyp       = 3,
+  ecutwfc    = 50.0,
+  ecutrho    = 400.0,
+  occupations = 'fixed'
+/
+
+&ELECTRONS
+  conv_thr    = 1.0d-8,
+  mixing_beta = 0.7
+/
+
+CELL_PARAMETERS angstrom
+  4.124949  4.124949  0.000000
+  4.124949  0.000000  4.124949
+  0.000000  4.124949  4.124949
+
+ATOMIC_SPECIES
+  Mg  24.305  Mg.pbe-spnl-kjpaw_psl.1.0.0.UPF
+  Ge  72.630  Ge.pbe-dn-kjpaw_psl.1.0.0.UPF
+  O   15.999  O.pbe-n-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS crystal
+  Mg   0.6250000  0.6250000  0.6250000
+  Mg   0.6250000  0.1250000  0.6250000
+  Mg   0.1250000  0.6250000  0.6250000
+  Mg   0.6250000  0.6250000  0.1250000
+  Ge   0.0000000  0.0000000  0.0000000
+  Ge   0.2500000  0.2500000  0.2500000
+  O    0.3748112  0.8750629  0.8750629
+  O    0.8750629  0.8750629  0.8750629
+  O    0.8750629  0.3748112  0.8750629
+  O    0.8751888  0.3749371  0.3749371
+  O    0.3749371  0.8751888  0.3749371
+  O    0.8750629  0.8750629  0.3748112
+  O    0.3749371  0.3749371  0.8751888
+  O    0.3749371  0.3749371  0.3749371
+
+K_POINTS automatic
+  6 6 6 0 0 0

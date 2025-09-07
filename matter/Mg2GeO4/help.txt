@@ -1,0 +1,1 @@
+mpirun -np 10 pw.x < ./in/Mg2GeO4.scf.in > ./out/Mg2GeO4.scf.out
