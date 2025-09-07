@@ -70,6 +70,7 @@ To use Quantum ESPRESSO executables conveniently, add them to your PATH.
 2. Add to PATH:
    ```bash
    echo 'export PATH=/path/to/qe-X.Y.Z/bin:$PATH' >> ~/.bashrc
+   ie: echo 'export PATH=/home/sabbir/dft_qe/qe-7.4.1/bin:$PATH' >> ~/.zshrc
    source ~/.bashrc
    ```
 
@@ -113,7 +114,7 @@ To use Quantum ESPRESSO executables conveniently, add them to your PATH.
    ```
 4. Check the output file:
    ```bash
-   cat test.out
+   cat ./output/test.out
    ```
    If the calculation completes without errors, the installation was successful.
 
