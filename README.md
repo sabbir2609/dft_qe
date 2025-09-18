@@ -1,8 +1,5 @@
-## Quantum Espresso
+## Advanced Computational tools for Materials Simulations (ACMS)
+This repo contains a collection of tools and scripts developed for advanced computational materials simulations. These tools are designed to facilitate various tasks in materials science, including data analysis, visualization, and simulation management.
 
-### This is a repository for the Quantum Espresso for bigginers.
-
-Quantum Espresso is an integrated suite of Open-Source computer codes for electronic-structure calculations and materials modeling at the nanoscale. It is based on density-functional theory, plane waves, and pseudopotentials. The code is freely available to the scientific community under the terms of the [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html).
-
-## Installation
-Check the [Install](install.md) for the installation instructions.
+### Tools
+- Density Functional Theory (DFT) Analysis: Quantum ESPRESSO, Matcalc.
